@@ -2,8 +2,8 @@
 TARGET			:= rwmem
 OBJS			:= rwmem.o
 
-CC              := gcc
-CXX             := g++
+CC              := $(CROSS_COMPILE)gcc
+CXX             := $(CROSS_COMPILE)g++
 CFLAGS			:= -Wall -pipe
 
 .PHONY:	clean
